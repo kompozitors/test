@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>КровСтудио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+Xj6l4G1l8kdFMvx6bMpiKFF9volG/GpG8e3B2Qd6Fd0J7C1iNkgdGKe2i1Lm5V0sNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <div class="container nav">
             <h1 class="logo">КровСтудио</h1>
-            <nav>
+            <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+            <nav id="navMenu" class="nav-links">
                 <a href="#about">О компании</a>
                 <a href="#services">Услуги</a>
                 <a href="#calculator">Калькулятор</a>
@@ -33,24 +38,37 @@
         <div class="container">
             <h2>Надежная кровля, фасады и заборы</h2>
             <p>С 2019 года мы помогаем дому быть красивым и защищенным.</p>
+            <a href="#contact" class="btn">Связаться</a>
         </div>
     </section>
 
     <section id="about" class="section">
-        <div class="container">
-            <h2>О компании</h2>
-            <p>КровСтудио — профессиональная команда по продаже кровли, фасадов и заборов. Мы на рынке с 2019 года и предлагаем только проверенные материалы и сервис высокого уровня.</p>
+        <div class="container about-content">
+            <div class="about-text">
+                <h2>О компании</h2>
+                <p>КровСтудио — профессиональная команда по продаже кровли, фасадов и заборов. Мы на рынке с 2019 года и предлагаем только проверенные материалы и сервис высокого уровня.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1582268611958-ebfd21276eb5?auto=format&fit=crop&w=400&q=60" alt="КровСтудио">
         </div>
     </section>
 
     <section id="services" class="section">
         <div class="container">
             <h2>Наши услуги</h2>
-            <ul class="services">
-                <li>Кровельные материалы</li>
-                <li>Фасадные решения</li>
-                <li>Ограждения и заборы</li>
-            </ul>
+            <div class="services">
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <p>Кровельные материалы</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-border-style"></i>
+                    <p>Фасадные решения</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-warehouse"></i>
+                    <p>Ограждения и заборы</p>
+                </div>
+            </div>
         </div>
     </section>
 
