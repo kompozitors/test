@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КровСтудио</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <h1 class="logo">КровСтудио</h1>
+            <nav>
+                <a href="#about">О компании</a>
+                <a href="#services">Услуги</a>
+                <a href="#calculator">Калькулятор</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <div id="auth">
+                <form id="loginForm" class="auth-form">
+                    <input type="text" id="username" placeholder="Логин" required>
+                    <button type="submit">Войти</button>
+                </form>
+                <div id="userArea" class="hidden">
+                    <span id="welcome"></span>
+                    <button id="logoutBtn">Выйти</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Надежная кровля, фасады и заборы</h2>
+            <p>С 2019 года мы помогаем дому быть красивым и защищенным.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>О компании</h2>
+            <p>КровСтудио — профессиональная команда по продаже кровли, фасадов и заборов. Мы на рынке с 2019 года и предлагаем только проверенные материалы и сервис высокого уровня.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <ul class="services">
+                <li>Кровельные материалы</li>
+                <li>Фасадные решения</li>
+                <li>Ограждения и заборы</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="calculator" class="section">
+        <div class="container">
+            <h2>Калькулятор кровли</h2>
+            <form id="calcForm" class="calc-form">
+                <input type="number" id="length" placeholder="Длина (м)" min="0" step="0.1" required>
+                <input type="number" id="width" placeholder="Ширина (м)" min="0" step="0.1" required>
+                <input type="number" id="slope" placeholder="Уклон (%)" min="0" step="0.1" required>
+                <button type="submit">Рассчитать</button>
+            </form>
+            <div id="calcResult" class="result"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Телефон: <a href="tel:+79264444369">+7 (926) 444 43-69</a></p>
+            <p>Адрес: г. Щёлково, ул. Браварская 100, пом. 8</p>
+            <form id="contactForm" class="contact-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <div class="map">
+                <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=38.003%2C55.920%2C38.004%2C55.921&layer=mapnik" style="border:0" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2019-2024 КровСтудио</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
